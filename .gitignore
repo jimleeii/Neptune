@@ -1,0 +1,8 @@
+Projects/Core/Application/bin
+Projects/Core/Application/obj
+Projects/Core/Domain/bin
+Projects/Core/Domain/obj
+Projects/Infrastructure/Infrastructure/bin
+Projects/Infrastructure/Infrastructure/obj
+Projects/Infrastructure/Persistence/bin
+Projects/Infrastructure/Persistence/obj
