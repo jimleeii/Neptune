@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <!-- <RootNamespace>Neptune.Infrastructure.Infrastructure</RootNamespace> -->
+    <AssemblyName>Neptune.Infrastructure.Infrastructure</AssemblyName>
+    <PackageId>Neptune.Infrastructure.Infrastructure</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+    <Authors>Wei Li</Authors>
+    <Product>Neptune.Infrastructure.Infrastructure</Product>
+    <Description>A library that contains classes for accessing external resources such as file systems, web services, smtp, and so on.</Description>    
+  </PropertyGroup>
+
+</Project>

@@ -3,19 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{E1B24080-2134-45B1-BE82-DDC6EA681B95}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{E1B24080-2134-45B1-BE82-DDC6EA681B95}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4F140EBD-C0B3-43A3-8EBF-324157F4F74F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Src\Persistence\Persistence.csproj", "{B0DC31A6-C20E-4DFD-9CAB-12797FF6F319}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Projects\Infrastructure\Persistence\Persistence.csproj", "{B0DC31A6-C20E-4DFD-9CAB-12797FF6F319}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Projects\Infrastructure\Infrastructure\Infrastructure.csproj", "{DCAA04CB-B64F-4C0E-8A07-63A149865C3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Src\Infrastructure\Infrastructure.csproj", "{DCAA04CB-B64F-4C0E-8A07-63A149865C3F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{837431C9-B60C-4F4F-80BA-EE6998B2B680}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Projects\Core\Application\Application.csproj", "{1DAD685C-B46C-48F3-8166-8545C75C5964}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Src\Core\Application\Application.csproj", "{1DAD685C-B46C-48F3-8166-8545C75C5964}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Projects\Core\Domain\Domain.csproj", "{B905B62B-3EF6-4650-A215-0F1E30A9A80C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Src\Core\Domain\Domain.csproj", "{B905B62B-3EF6-4650-A215-0F1E30A9A80C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,9 +78,6 @@ Global
 		{B905B62B-3EF6-4650-A215-0F1E30A9A80C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{4F140EBD-C0B3-43A3-8EBF-324157F4F74F} = {E1B24080-2134-45B1-BE82-DDC6EA681B95}
-		{B0DC31A6-C20E-4DFD-9CAB-12797FF6F319} = {4F140EBD-C0B3-43A3-8EBF-324157F4F74F}
-		{DCAA04CB-B64F-4C0E-8A07-63A149865C3F} = {4F140EBD-C0B3-43A3-8EBF-324157F4F74F}
 		{837431C9-B60C-4F4F-80BA-EE6998B2B680} = {E1B24080-2134-45B1-BE82-DDC6EA681B95}
 		{1DAD685C-B46C-48F3-8166-8545C75C5964} = {837431C9-B60C-4F4F-80BA-EE6998B2B680}
 		{B905B62B-3EF6-4650-A215-0F1E30A9A80C} = {837431C9-B60C-4F4F-80BA-EE6998B2B680}

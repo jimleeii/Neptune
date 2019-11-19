@@ -1,8 +1,11 @@
 # Neptune
+
 A playground
 
-# First game
+## First Game
+
 Clean Architecture
 
 A WebApi based on Clean Architecture practice. Simulating a POS system.
-* Following sample from https://github.com/JasonGT/NorthwindTraders
+
+* Following sample from <https://github.com/JasonGT/NorthwindTraders>

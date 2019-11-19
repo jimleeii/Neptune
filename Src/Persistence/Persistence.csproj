@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <!-- <RootNamespace>Neptune.Infrastructure.Persistence</RootNamespace> -->
+    <AssemblyName>Neptune.Infrastructure.Persistence</AssemblyName>
+    <PackageId>Neptune.Infrastructure.Persistence</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+    <Authors>Wei Li</Authors>
+    <Product>Neptune.Infrastructure.Persistence</Product>
+    <Description>A library that contains classes for accessing external resources such as file systems, web services, smtp, and so on.</Description>      
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <!-- <RootNamespace>Neptune.Core.Domain</RootNamespace> -->
+    <AssemblyName>Neptune.Core.Domain</AssemblyName>
+    <PackageId>Neptune.Core.Domain</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+    <Authors>Wei Li</Authors>
+    <Product>Neptune.Core.Domain</Product>
+    <Description>A library that contains all entities, enums, exceptions, types and logic specific.</Description>
+  </PropertyGroup>
+
+</Project>
