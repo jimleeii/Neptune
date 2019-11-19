@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Application
+namespace Neptune.Core.Application
 {
     public class Class1
     {

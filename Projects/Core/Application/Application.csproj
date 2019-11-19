@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <!-- <RootNamespace>Neptune.Core.Application</RootNamespace> -->
+    <AssemblyName>Neptune.Core.Application</AssemblyName>
+    <PackageId>Neptune.Core.Application</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.0.1000</Version>
+    <Authors>Wei Li</Authors>
+    <Product>Neptune.Core.Application</Product>
+    <Description>A library that contains all application logic.</Description>
   </PropertyGroup>
 
 </Project>
