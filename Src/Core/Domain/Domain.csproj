@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <!-- <RootNamespace>Neptune.Core.Domain</RootNamespace> -->
+    <RootNamespace>Neptune.Core.Domain</RootNamespace>
     <AssemblyName>Neptune.Core.Domain</AssemblyName>
     <PackageId>Neptune.Core.Domain</PackageId>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>

@@ -1,6 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace Neptune.Core.Application
+namespace Neptune.Infrastructure
 {
     /// <summary>
     /// Extension for service collection to inject current class lib required dependencies
@@ -12,8 +14,10 @@ namespace Neptune.Core.Application
         /// Performs denpendency injection at Startup.cs
         /// </summary>
         /// <param name="services">Service collection</param>
+		/// <param name="configuration">Configuration</param>
+		/// <param name="environment">Web host environment</param>
         /// <returns>Service collection</returns>
-        public static IServiceCollection AddApplication(this IServiceCollection services)
+        public static IServiceCollection AddApplication(this IServiceCollection services, IConfiguration configuration, IWebHostEnvironment environment)
         {
             // Inject dependencies
 

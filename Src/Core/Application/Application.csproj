@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>Neptune.Core.Application</RootNamespace>
     <AssemblyName>Neptune.Core.Application</AssemblyName>
     <PackageId>Neptune.Core.Application</PackageId>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
