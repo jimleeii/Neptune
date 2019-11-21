@@ -12,11 +12,8 @@ namespace Neptune.Core.Domain.Entities
         public string OtherDetails { get; set; }
 
         // Foreign keys
-        public int CustomerId { get; set; }
         public Customer Customer { get; set; }
-        public int SalesOutletId { get; set; }
         public SalesOutlet SalesOutlet { get; set; }
-        public int StaffId { get; set; }
         public Staff Staff { get; set; }
 
         public ICollection<Payment> Payments { get; private set; }

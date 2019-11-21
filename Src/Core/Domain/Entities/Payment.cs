@@ -1,5 +1,3 @@
-using System;
-
 namespace Neptune.Core.Domain.Entities
 {
     public class Payment
@@ -9,9 +7,7 @@ namespace Neptune.Core.Domain.Entities
         public string OtherDetails { get; set; }
 
         // Foreign keys
-        public Guid PaymentMethodCode { get; set; }
         public PaymentMethod PaymentMethod { get; set; }
-        public int TransactionId { get; set; }
         public Transaction Transaction { get; set; }
     }
 }
