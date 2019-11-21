@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Neptune.Core.Domain.Entities
 {
@@ -10,8 +11,21 @@ namespace Neptune.Core.Domain.Entities
         public double TransactionRetailPrice { get; set; }
         public string OtherDetails { get; set; }
 
+        // Foreign keys
         public int CustomerId { get; set; }
+        public Customer Customer { get; set; }
         public int SalesOutletId { get; set; }
+        public SalesOutlet SalesOutlet { get; set; }
         public int StaffId { get; set; }
+        public Staff Staff { get; set; }
+
+        public ICollection<Payment> Payments { get; private set; }
+        public ICollection<ProductInTransaction> ProductInTransactions { get; private set; }
+
+        public Transaction()
+        {
+            Payments = new HashSet<Payment>();
+            ProductInTransactions = new HashSet<ProductInTransaction>();
+        }
     }
 }
