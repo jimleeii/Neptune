@@ -17,7 +17,7 @@ namespace Neptune.Infrastructure
 		/// <param name="configuration">Configuration</param>
 		/// <param name="environment">Web host environment</param>
         /// <returns>Service collection</returns>
-        public static IServiceCollection AddApplication(this IServiceCollection services, IConfiguration configuration, IWebHostEnvironment environment)
+        public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration, IWebHostEnvironment environment)
         {
             // Inject dependencies
 

@@ -1,5 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Neptune.Core.Application.Common.Interfaces;
 
 namespace Neptune.Persistence
 {
@@ -15,9 +17,15 @@ namespace Neptune.Persistence
         /// <param name="services">Service collection</param>
 		/// <param name="configuration">Configuration</param>
         /// <returns>Service collection</returns>
-        public static IServiceCollection AddApplication(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddPersistence(this IServiceCollection services, IConfiguration configuration)
         {
-            // Inject dependencies
+            // Adds database context, configuration with name 'PosDatabase' is provided in appsettings.json
+            services.AddDbContext<PosDbContext>(options =>
+                options.UseSqlServer(configuration.GetConnectionString("PosDatabase")));
+
+            // Add scoped
+            // https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-3.0
+            services.AddScoped<IPosDbContext>(provider => provider.GetService<PosDbContext>());
 
             return services;
         }

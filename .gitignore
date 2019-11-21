@@ -6,3 +6,5 @@ Src/Infrastructure/bin
 Src/Infrastructure/obj
 Src/Persistence/bin
 Src/Persistence/obj
+Src/Core/Common/bin
+Src/Core/Common/obj

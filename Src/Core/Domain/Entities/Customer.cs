@@ -1,8 +1,9 @@
 using System.Collections.Generic;
+using Neptune.Core.Domain.Common;
 
 namespace Neptune.Core.Domain.Entities
 {
-    public class Customer
+    public class Customer : AuditableEntity
     {
         public int CustomerId { get; set; }
         public string CustomerDetails { get; set; }

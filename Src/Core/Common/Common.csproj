@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>Neptune.Core.Common</RootNamespace>
+    <AssemblyName>Neptune.Core.Common</AssemblyName>
+    <PackageId>Neptune.Core.Common</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+    <Authors>Wei Li</Authors>
+    <Product>Neptune.Core.Common</Product>
+    <Description>A library that contains classes for share around.</Description>
+  </PropertyGroup>
+
+</Project>
