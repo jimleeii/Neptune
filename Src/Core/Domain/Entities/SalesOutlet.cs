@@ -3,6 +3,9 @@ using Neptune.Core.Domain.Common;
 
 namespace Neptune.Core.Domain.Entities
 {
+    /// <summary>
+    /// Represents sales outlet in data model
+    /// </summary>
     public class SalesOutlet : AuditableEntity
     {
         public int SalesOutletId { get; set; }

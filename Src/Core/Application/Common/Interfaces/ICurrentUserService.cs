@@ -5,7 +5,13 @@ namespace Neptune.Core.Application.Common.Interfaces
     /// </summary>
     public interface ICurrentUserService
     {
+        /// <summary>
+        /// Gets current user id
+        /// </summary>
         string UserId { get; }
+        /// <summary>
+        /// Gets current is authenticated
+        /// </summary>
         bool IsAuthenticated { get; }
     }
 }

@@ -1,5 +1,8 @@
 namespace Neptune.Core.Domain.Entities
 {
+    /// <summary>
+    /// Represents product in transaction
+    /// </summary>
     public class ProductInTransaction
     {
         public int ProductId { get; set; }

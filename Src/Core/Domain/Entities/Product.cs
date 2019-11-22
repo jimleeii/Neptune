@@ -3,6 +3,9 @@ using Neptune.Core.Domain.Common;
 
 namespace Neptune.Core.Domain.Entities
 {
+    /// <summary>
+    /// Represents product in data model
+    /// </summary>
     public class Product : AuditableEntity
     
     {

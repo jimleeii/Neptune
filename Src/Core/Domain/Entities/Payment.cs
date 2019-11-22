@@ -1,5 +1,6 @@
 namespace Neptune.Core.Domain.Entities
 {
+    // Represents payment in data model
     public class Payment
     {
         public int PaymentId { get; set; }

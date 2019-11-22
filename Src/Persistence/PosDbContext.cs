@@ -9,11 +9,20 @@ using Neptune.Core.Domain.Entities;
 
 namespace Neptune.Persistence
 {
+    /// <summary>
+    /// POS data context to access database
+    /// </summary>
     public class PosDbContext : DbContext, IPosDbContext
     {
         #region Variables
 
+        /// <summary>
+        /// Current user service
+        /// </summary>
         private readonly ICurrentUserService _currentUserService;
+        /// <summary>
+        /// System time stamp
+        /// </summary>
         private readonly IDateTime _dateTime;
 
         #endregion
@@ -33,6 +42,12 @@ namespace Neptune.Persistence
 
         #region Methods
 
+        /// <summary>
+        /// Saves changes made to data context
+        /// Checks AuitableEntity object and assign current user and system time stamp
+        /// </summary>
+        /// <param name="cancellationToken">Task cancellation token</param>
+        /// <returns></returns>
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
         {
             foreach (var entry in ChangeTracker.Entries<AuditableEntity>())
@@ -53,6 +68,11 @@ namespace Neptune.Persistence
             return base.SaveChangesAsync(cancellationToken);
         }
 
+        /// <summary>
+        /// Called by the framework when data context is first created to build the model and its mappings in memory
+        /// https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbcontext.onmodelcreating?view=entity-framework-6.2.0
+        /// </summary>
+        /// <param name="modelBuilder">Model buidler</param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(PosDbContext).Assembly);
@@ -62,11 +82,21 @@ namespace Neptune.Persistence
 
         #region Constructors
 
+        /// <summary>
+        /// Creates instant of this class
+        /// </summary>
+        /// <param name="options">Db context options</param>
         public PosDbContext(DbContextOptions<PosDbContext> options)
             : base(options)
         {
         }
 
+        /// <summary>
+        /// Creates instant of this class
+        /// </summary>
+        /// <param name="options">Db context options</param>
+        /// <param name="currentUserService">Current user service</param>
+        /// <param name="dateTime">System data time</param>
         public PosDbContext(DbContextOptions<PosDbContext> options, ICurrentUserService currentUserService, IDateTime dateTime)
             : base(options)
         {

@@ -3,6 +3,9 @@ using Neptune.Core.Domain.Common;
 
 namespace Neptune.Core.Domain.Entities
 {
+    /// <summary>
+    /// Represents staff in dota model
+    /// </summary>
     public class Staff : AuditableEntity
     {
         public int StaffId { get; set; }

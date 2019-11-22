@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Neptune.Core.Domain.Entities
 {
+    /// <summary>
+    /// Represents transaction in data model
+    /// </summary>
     public class Transaction
     {
         public int TransactionId { get; set; }
