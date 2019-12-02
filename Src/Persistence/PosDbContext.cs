@@ -11,6 +11,7 @@ namespace Neptune.Persistence
 {
     /// <summary>
     /// POS data context to access database
+    /// Must implement from Application layer interface
     /// </summary>
     public class PosDbContext : DbContext, IPosDbContext
     {
@@ -72,7 +73,7 @@ namespace Neptune.Persistence
         /// Called by the framework when data context is first created to build the model and its mappings in memory
         /// https://docs.microsoft.com/en-us/dotnet/api/system.data.entity.dbcontext.onmodelcreating?view=entity-framework-6.2.0
         /// </summary>
-        /// <param name="modelBuilder">Model buidler</param>
+        /// <param name="modelBuilder">Model builder</param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(PosDbContext).Assembly);
