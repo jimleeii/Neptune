@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Neptune.Core.Domain</RootNamespace>
     <AssemblyName>Neptune.Core.Domain</AssemblyName>
     <PackageId>Neptune.Core.Domain</PackageId>
