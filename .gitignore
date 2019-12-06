@@ -8,4 +8,7 @@ Src/Persistence/bin
 Src/Persistence/obj
 Src/Core/Common/bin
 Src/Core/Common/obj
+Src/Presentation/WebApi/bin
+Src/Presentation/WebApi/obj
 .vs
+.vscode

@@ -36,10 +36,8 @@ namespace Neptune.Persistence
         public TContext CreateDbContext(string[] args)
         {
             // Gets presentation layer path
-            // var basePath = Directory.GetCurrentDirectory() + string.Format("{0}..{0}WebUI", Path.DirectorySeparatorChar);
-            // return Create(basePath, Environment.GetEnvironmentVariable(AspNetCoreEnvironment));
-#warning This is for testing only. Switch back to above code for deploy
-            return Create("Server=.;Database=Pos;Trusted_Connection=True;");
+            var basePath = Directory.GetCurrentDirectory() + string.Format("{0}..{0}Presentation{0}WebApi", Path.DirectorySeparatorChar);
+            return Create(basePath, Environment.GetEnvironmentVariable(AspNetCoreEnvironment));
         }
 
         /// <summary>

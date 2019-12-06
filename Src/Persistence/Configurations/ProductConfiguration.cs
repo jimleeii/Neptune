@@ -36,7 +36,7 @@ namespace Neptune.Persistence.Configurations
 
             builder.Property(e => e.Created)
                 .IsRequired()
-                .HasDefaultValue("GETDATE()");
+                .HasDefaultValueSql("GETDATE()");
 
             builder.Property(e => e.LastModifiedBy)
                 .HasMaxLength(45);
