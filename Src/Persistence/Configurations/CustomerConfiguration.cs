@@ -22,6 +22,17 @@ namespace Neptune.Persistence.Configurations
             builder.Property(e => e.CustomerDetails)
                 .IsRequired()
                 .HasMaxLength(1024);
+
+            builder.Property(e => e.CreatedBy)
+                .IsRequired()
+                .HasMaxLength(45);
+
+            builder.Property(e => e.Created)
+                .IsRequired()
+                .HasDefaultValue("GETDATE()");
+
+            builder.Property(e => e.LastModifiedBy)
+                .HasMaxLength(45);
         }
     }
 }

@@ -25,3 +25,10 @@ Singleton lifetime services (AddSingleton) are created the first time they're re
 
 >**Warning**
 It's dangerous to resolve a scoped service from a singleton. It may cause the service to have incorrect state when processing subsequent requests.
+
+## Database Migrations
+
+Use following commands.
+
+>dotnet ef migrations add InitialCreate
+>dotnet ef database update

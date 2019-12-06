@@ -5,30 +5,24 @@ using Neptune.Core.Domain.Entities;
 namespace Neptune.Persistence.Configurations
 {
     /// <summary>
-    /// Configure product entity meta data for database
+    /// Configure sales outlet entity meta data for database
     /// </summary>
-    public class ProductConfiguration : IEntityTypeConfiguration<Product>
+    public class SalesOutletConfiguration : IEntityTypeConfiguration<SalesOutlet>
     {
         /// <summary>
         /// Adds schema to entity
         /// </summary>
         /// <param name="builder">Entity type builder</param>
-        public void Configure(EntityTypeBuilder<Product> builder)
+        public void Configure(EntityTypeBuilder<SalesOutlet> builder)
         {
             // builder.HasKey can be ignored as following approach
-            builder.Property(e => e.ProductId)
+            builder.Property(e => e.SalesOutletId)
                 .HasColumnName("Id")
                 .ValueGeneratedOnAdd();
 
-            builder.Property(e => e.ProductDetails)
+            builder.Property(e => e.SalesOutletDetails)
                 .IsRequired()
                 .HasMaxLength(1024);
-
-            builder.Property(e => e.ProductWholesalePrice)
-                .IsRequired();
-
-            builder.Property(e => e.ProductRetailPrice)
-                .IsRequired();
 
             builder.Property(e => e.CreatedBy)
                 .IsRequired()

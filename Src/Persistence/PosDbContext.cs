@@ -45,7 +45,7 @@ namespace Neptune.Persistence
 
         /// <summary>
         /// Saves changes made to data context
-        /// Checks AuitableEntity object and assign current user and system time stamp
+        /// Checks AuditableEntity object and assign current user and system time stamp
         /// </summary>
         /// <param name="cancellationToken">Task cancellation token</param>
         /// <returns></returns>

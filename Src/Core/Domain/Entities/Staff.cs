@@ -4,7 +4,7 @@ using Neptune.Core.Domain.Common;
 namespace Neptune.Core.Domain.Entities
 {
     /// <summary>
-    /// Represents staff in dota model
+    /// Represents staff in data model
     /// </summary>
     public class Staff : AuditableEntity
     {

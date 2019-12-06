@@ -15,6 +15,7 @@ namespace Neptune.Persistence.Configurations
         /// <param name="builder">Entity type builder</param>
         public void Configure(EntityTypeBuilder<PaymentMethod> builder)
         {
+            // Assigns none Id column as PK
             builder.HasKey(e => e.PaymentMethodCode);
 
             builder.Property(e => e.PaymentMethodName)
