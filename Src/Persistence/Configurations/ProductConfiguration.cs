@@ -15,7 +15,21 @@ namespace Neptune.Persistence.Configurations
         /// <param name="builder">Entity type builder</param>
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-            
+            builder.HasKey(e => e.ProductId);
+
+            builder.Property(e => e.ProductId)
+                .HasColumnName("Id")
+                .ValueGeneratedOnAdd();
+
+            builder.Property(e => e.ProductDetails)
+                .IsRequired()
+                .HasMaxLength(1024);
+
+            builder.Property(e => e.ProductWholesalePrice)
+                .IsRequired();
+
+            builder.Property(e => e.ProductRetailPrice)
+                .IsRequired();
         }
     }
 }
