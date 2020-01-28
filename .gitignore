@@ -1,3 +1,5 @@
+.vs
+.vscode
 Src/Core/Application/bin
 Src/Core/Application/obj
 Src/Core/Domain/bin
@@ -10,5 +12,6 @@ Src/Core/Common/bin
 Src/Core/Common/obj
 Src/Presentation/WebApi/bin
 Src/Presentation/WebApi/obj
-.vs
-.vscode
+Src/IdentityServer/bin
+Src/IdentityServer/obj
+Src/IdentityServer/tempkey.rsa
