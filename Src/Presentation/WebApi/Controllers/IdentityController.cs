@@ -10,7 +10,7 @@ namespace WebApi.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return null;
+            return new JsonResult("Yes");
             //return new JsonResult(from c in User.Claims select new { c.Type, c.Value });
         }
     }

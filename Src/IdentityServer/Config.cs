@@ -18,7 +18,7 @@ namespace IdentityServer
         public static IEnumerable<ApiResource> Apis =>
             new ApiResource[] 
             { 
-                new ApiResource("WebApi", "POS Web Api")
+                new ApiResource("webapi", "POS Web Api")
             };
         
         public static IEnumerable<Client> Clients =>
@@ -38,7 +38,7 @@ namespace IdentityServer
                     },
 
                     // scopes that client has access to
-                    AllowedScopes = { "WebApi" }
+                    AllowedScopes = { "webapi" }
                 }
             };
         
